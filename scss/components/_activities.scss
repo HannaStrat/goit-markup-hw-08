@@ -1,0 +1,52 @@
+.section__activities {
+    padding-top: 0;
+    padding-bottom: 94px;
+
+    @media  (max-width: 1023px) {
+    display: none;
+        
+    }
+}
+
+.activities .title {
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.activities__list {
+    display: flex;
+    gap: 30px;
+    padding-left: 0;
+    
+}
+
+.activities__card {
+    position: relative;
+    width: 370px;
+    height: 294px;
+    
+}
+
+.activities__description {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    right: 0;
+    bottom: 0;
+
+    display: block;
+    margin: 0;
+    padding: 27px 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    background-color: rgba(47, 48, 58, 0.8);
+    color: rgba(255, 255, 255, 1);
+
+}
