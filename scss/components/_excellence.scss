@@ -1,8 +1,9 @@
 .excellence__list {
   // display: flex;
-  gap: 30px;
-  padding-left: 15px;
+  // gap: 30px;
+  padding-left: 0px;
   margin: 0;
+  
 }
 
 .excellence__title {
@@ -11,6 +12,7 @@
 
   color: var(--title-text-color);
   text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -20,14 +22,21 @@
 .excellence__text {
   margin-top: 0;
   margin-bottom: 0;
+  
 
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
 }
 .excellence__item {
-  width: 270px;
+  min-width: 100%;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    padding-bottom: 30px;
+  }
 }
+
 .excellence__item::before {
   content: "";
   display: block;
