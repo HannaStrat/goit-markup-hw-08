@@ -10,6 +10,7 @@ html {
 
 header {
     border-bottom: 1px solid #ececec;
+    position: relative;
 }
 
 body {
@@ -18,6 +19,13 @@ body {
 
     font-family: Roboto, sans-serif;
 }
+body.modal-open {
+    overflow: hidden;
+}
+// body.mobil-menu-open {
+//     overflow-y: noscroll;
+// }
+
 h2,
 h3,
 h4,

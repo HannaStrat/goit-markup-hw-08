@@ -5,11 +5,11 @@
     padding-right: 15px;
     padding-left: 15px;
 
-    
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    } 
 }
-@media screen and (min-width: 479px) {
-    .container {
-        margin-right: 0;
-        margin-left: 0;
-            }
-    }
+
+    

@@ -4,8 +4,21 @@ footer {
     padding-bottom: 60px;
 }
 .footer__container {
-    // display: flex;
-    
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        align-items: baseline;
+        // justify-content: center;
+        width: 1200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 footer .logo-studio {
@@ -19,6 +32,10 @@ footer .link-logo {
     padding-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
+
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+    }
 }
 
 .address {
@@ -27,7 +44,10 @@ footer .link-logo {
 
 .address__container {
     margin-right: 0px;
-    
+
+    @media screen and (min-width: 1200px) {
+    margin-right: 70px;;
+    } 
 }
 
 .address__list {
@@ -35,11 +55,20 @@ footer .link-logo {
     padding: 0;
     margin-bottom: 60px;
     
+    @media screen and (min-width: 1200px) {
+        display: inline-block;
+        margin-bottom: 0;
+    }
 }
 
 .address__items {
     margin-bottom: 8px;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+        text-align: left;
+    }
 }
 
 .address-mailing {
@@ -81,6 +110,10 @@ footer .link-logo {
     margin-bottom: 20px;
 
     color: #ffffff;
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 23px;
+        text-align: left;
+    }
 }
 
 .connect__list {
@@ -89,6 +122,13 @@ footer .link-logo {
     gap: 10px;
     padding: 0;
     margin-bottom: 60px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 102px;
+        }
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 0;
+        margin-right: 93px;
+    }
 }
 
 .connect__link {
@@ -116,20 +156,33 @@ footer .link-logo {
 
 
 .subscribe__container {
+
+    @media screen and (max-width: 1200px) {
+        display: block;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
     margin-left: auto;
+    }
     
 }
 
 .subscribe {
-    // display: flex;
+        
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+
 }
 
 .subscribe__button {
     position: relative;
-    display: block;
+    // display: block;
     padding: 10px 28px;
-    margin-left: 12px;
+    // margin-left: 12px;
     min-width: 200px;
+    height: 50px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid transparent;
@@ -164,7 +217,7 @@ footer .link-logo {
 
 
 .subscribe__input {
-    min-width: 100%;
+    width: calc(100% - 15px);
     height: 50px;
     padding: 12px 12px 12px 12px;
     margin-bottom: 20px;
@@ -177,6 +230,11 @@ footer .link-logo {
 
     @media screen and (min-width: 480px) {
         width: 450px;
+        display: block;
         
+    }
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+        margin-right: 12px;
     }
 }

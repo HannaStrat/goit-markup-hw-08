@@ -1,7 +1,9 @@
 .header__container {
-    // display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
+
+    
 }
 
 header .link-logo {
@@ -9,11 +11,15 @@ header .link-logo {
     padding-top: 24px;
     padding-bottom: 25px;
     padding-left: 0;
-    // margin-right: 93px;
+
+    @media screen and (min-width: 1024px) {
+        margin-right: 93px;
+    }
+    
 }
 
 .site-nav {
-    // display: flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 50px;
@@ -21,21 +27,41 @@ header .link-logo {
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 0;
-    // margin-right: 308px;
+
+    @media screen and (min-width: 768px) {
+        margin-right: 96px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 308px;
+    }
+    
 }
 
 .contacts {
-    // display: flex;
-    align-content: center;
-    justify-content: flex-start;
-    gap: 40px;
-    flex-wrap: nowrap;
+    
 
     margin: 0;
     padding-top: 32px;
     padding-right: 0;
     padding-bottom: 32px;
     padding-left: 0;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        align-content: center;
+        justify-content: flex-start;
+        gap: 40px;
+        flex-wrap: wrap;
+        
+    }
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        align-content: center;
+        justify-content: flex-start;
+        gap: 40px;
+        flex-wrap: nowrap;
+    }
 }
 
 .contacts__item {
@@ -43,13 +69,20 @@ header .link-logo {
     align-items: center;
     padding-right: 0;
     flex-wrap: nowrap;
+
+    &:not(:last-child) {
+        @media screen and (max-width: 1023px) {
+            margin-bottom: 10px;
+        }
+        }
 }
 
 .contacts__list {
-    display: flex;
+    display: flex; 
     align-items: center;
     justify-content: space-between;
     padding-right: 0;
+
 }
 
 .contacts__icon {

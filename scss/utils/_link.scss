@@ -36,9 +36,8 @@
     color: var(--accent-color);
     position: relative;
     padding-top: 32px;
-}
 
-.link.current::after {
+    &::after {
     content: "";
     display: inline-block;
     width: 100%;
@@ -48,4 +47,5 @@
     background-color: var(--accent-color);
     border-radius: 2px;
     position: absolute;
+}
 }
