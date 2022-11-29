@@ -50,6 +50,10 @@ body.modal-open {
   overflow: hidden;
 }
 
+body.mobil-menu-open {
+  overflow-y: noscroll;
+}
+
 h2,
 h3,
 h4,
@@ -362,7 +366,7 @@ ul {
 
 .excellence__list {
   padding-left: 0px;
-  margin: 0;
+  margin: 0 auto;
 }
 @media screen and (min-width: 768px) {
   .excellence__list {
@@ -379,7 +383,6 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    gap: 30px;
     padding-left: 15px;
     margin: 0;
     -webkit-box-pack: center;
@@ -432,6 +435,7 @@ ul {
 @media screen and (min-width: 1200px) {
   .excellence__item {
     width: 270px;
+    gap: 30px;
   }
 }
 
@@ -909,6 +913,11 @@ header .link-logo {
   background-color: #c4c4c4;
   text-align: center;
   padding: 0;
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    height: 600px;
+  }
 }
 
 .section.hero {

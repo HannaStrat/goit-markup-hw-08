@@ -2,15 +2,19 @@
     background-color: #c4c4c4;
     text-align: center;
     padding: 0;
+    @media screen and (min-width: 1200px) {
+        height: 600px;
+        }
 }
 
 .section.hero {
     min-height: 400px;
 
+
     @media screen and (min-width: 1200px) {
         height: 600px;
+        }
     }
-}
 
 .hero__container {
     padding-top: 118px;
@@ -37,7 +41,9 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+
 }
+
 @media (min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
     .hero__overlay {
         background-image: url(/img/bgrheromob@2x.jpg)
