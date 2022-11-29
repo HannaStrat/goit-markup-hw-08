@@ -1,6 +1,6 @@
 .container {
-    margin-right: 0;
-    margin-left: 0;
+    margin-right: auto;
+    margin-left: auto;
     
     padding-right: 15px;
     padding-left: 15px;
@@ -12,4 +12,19 @@
     } 
 }
 
-    
+@media screen and (max-width: 479) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767) {
+    .container {
+        width: 450px;
+    }
+}
+@media screen and (max-width: 1199) {
+    .container {
+        width: 768px;
+    }
+}

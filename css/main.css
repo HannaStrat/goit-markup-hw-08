@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --primary-black-color: #2f303a;
+  --text-grey-color: rgba(117, 117, 117, 1);
 }
 
 .menu-site_link.current {
@@ -80,8 +81,8 @@ p {
 }
 
 .container {
-  margin-right: 0;
-  margin-left: 0;
+  margin-right: auto;
+  margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
 }
@@ -93,6 +94,21 @@ p {
   }
 }
 
+@media screen and (max-width: 479) {
+  .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767) {
+  .container {
+    width: 450px;
+  }
+}
+@media screen and (max-width: 1199) {
+  .container {
+    width: 768px;
+  }
+}
 img {
   display: block;
   max-width: 100%;
@@ -117,9 +133,16 @@ ul {
   text-align: center;
   margin-bottom: 30px;
 }
+@media screen and (min-width: 480px) {
+  .title {
+    font-size: calc(1rem + 2vw);
+    margin-bottom: 50px;
+  }
+}
 @media screen and (max-width: 1200px) {
   .title {
     font-size: calc(1rem + 2vw);
+    margin-bottom: 50px;
   }
 }
 
@@ -168,7 +191,7 @@ ul {
 
 .link .email,
 .link .tel {
-  color: var(--primary-text-color);
+  color: var(--text-grey-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17;
@@ -404,6 +427,11 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
+@media screen and (min-width: 480px) and (max-width: 1200px) {
+  .excellence__title {
+    text-align: left;
+  }
+}
 
 .excellence__text {
   margin-top: 0;
@@ -419,11 +447,6 @@ ul {
 @media screen and (max-width: 767px) {
   .excellence__item:not(:last-child) {
     margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 480px) {
-  .excellence__item {
-    width: 450px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -719,12 +742,11 @@ footer .link-logo {
     text-align: center;
   }
 }
-@media screen and (min-width: 1200px) {
-  .subscribe__container {
-    margin-left: auto;
-  }
-}
 
+.subscribe {
+  display: block;
+  text-align: center;
+}
 @media screen and (min-width: 1200px) {
   .subscribe {
     display: -webkit-box;
@@ -769,6 +791,8 @@ footer .link-logo {
   height: 50px;
   padding: 12px 12px 12px 12px;
   margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2f303a;
@@ -902,6 +926,7 @@ header .link-logo {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-right: 0;
+  color: var(--text-grey-color);
 }
 
 .contacts__icon {
@@ -945,8 +970,8 @@ header .link-logo {
   height: 100%;
   margin-left: 0;
   margin-right: 0;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/img/bgrheromob@1x.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/img/bgrheromob@1x.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../../img/bgrheromob@1x.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../img/bgrheromob@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
