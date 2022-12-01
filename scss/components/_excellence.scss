@@ -24,15 +24,19 @@
 
   color: var(--title-text-color);
   text-transform: uppercase;
-  text-align: center;
+  // text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-
-  @media screen and (min-width: 480px) and (max-width: 1200px) {
-      text-align: left;
+  
+  @media screen and (max-width:479) {
+    text-align: center;
   }
+
+  // @media screen and (min-width: 480px) and (max-width: 1200px) {
+  //     text-align: left;
+  // }
 }
 
 .excellence__text {

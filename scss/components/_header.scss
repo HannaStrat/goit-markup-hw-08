@@ -3,7 +3,6 @@
     align-items: center;
     justify-content: space-between;
 
-    
 }
 
 header .link-logo {
@@ -12,7 +11,7 @@ header .link-logo {
     padding-bottom: 25px;
     padding-left: 0;
 
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1200px) {
         margin-right: 93px;
     }
     
@@ -54,7 +53,7 @@ header .link-logo {
         flex-wrap: wrap;
         
     }
-    @media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         align-content: center;
         justify-content: flex-start;
@@ -68,10 +67,9 @@ header .link-logo {
     align-items: center;
     padding-right: 0;
     flex-wrap: nowrap;
-   
 
     &:not(:last-child) {
-        @media screen and (max-width: 1023px) {
+        @media screen and (max-width: 1200px) {
             margin-bottom: 10px;
         }
         }

@@ -231,7 +231,10 @@ footer .link-logo {
     @media screen and (min-width: 480px) {
         width: 450px;
         display: block;
-        
+    }
+    @media screen and (min-width: 768px) {
+            width: 358px;
+            display: block;
     }
     @media screen and (min-width: 1200px) {
         width: 358px;
