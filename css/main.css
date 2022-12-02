@@ -81,6 +81,8 @@ p {
 }
 
 .container {
+  min-width: 320px;
+  max-width: 1200px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -421,14 +423,15 @@ ul {
   margin-bottom: 10px;
   color: var(--title-text-color);
   text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
 }
-@media screen and (max-width: 479) {
+@media screen and (min-width: 768px) {
   .excellence__title {
-    text-align: center;
+    text-align: left;
   }
 }
 
@@ -561,9 +564,8 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 @media screen and (min-width: 1200px) {
