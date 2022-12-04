@@ -556,6 +556,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   .footer__container {
+    width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -740,11 +741,17 @@ footer .link-logo {
 }
 
 .subscribe__container {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media only screen and (min-width: 768px) {
-  .subscribe__container.self {
+  .subscribe__container {
     -ms-flex-item-align: end;
         align-self: flex-end;
     -webkit-box-pack: center;

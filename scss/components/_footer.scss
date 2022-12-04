@@ -6,6 +6,7 @@ footer {
 .footer__container {
 
     @media screen and (min-width: 768px) {
+        width: 768px;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
@@ -158,11 +159,12 @@ footer .link-logo {
 
 
 .subscribe__container {
-    display: block;
+    display: flex;
+    flex-direction: column;
     
 }
 @media only screen and (min-width: 768px) {
-    .subscribe__container.self {
+    .subscribe__container {
         align-self: flex-end;
         justify-content: center;
     }
