@@ -161,15 +161,20 @@ footer .link-logo {
 .subscribe__container {
     display: flex;
     flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
     
 }
-@media only screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .subscribe__container {
-        align-self: flex-end;
         justify-content: center;
     }
 }
-
+@media screen and (min-width: 1200px) {
+    .subscribe__container {
+        justify-content: center;
+    }
+}
 
 .subscribe {
     
