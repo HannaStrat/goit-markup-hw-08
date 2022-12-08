@@ -56,9 +56,6 @@
     }
   }
 
-  // @media screen and (min-width: 480px) {
-  //   width: 450px;
-  //   }
   @media screen and (min-width: 768px) {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
