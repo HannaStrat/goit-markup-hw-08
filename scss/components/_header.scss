@@ -68,11 +68,14 @@ header .link-logo {
     padding-right: 0;
     flex-wrap: nowrap;
 
+    
+
     &:not(:last-child) {
         @media screen and (max-width: 1200px) {
             margin-bottom: 10px;
         }
         }
+        
 }
 
 .contacts__list {
@@ -81,6 +84,12 @@ header .link-logo {
     justify-content: space-between;
     padding-right: 0;
     color: var(--text-grey-color);
+    
+    &:hover,
+    &:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
 }
 
 .contacts__icon {
