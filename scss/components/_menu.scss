@@ -5,7 +5,7 @@
     @media screen and (max-width: 767px) {
         display: none;
     }
-    @media screen and (min-width: 768) {
+    @media screen and (min-width: 768px) {
         
         align-items: center;
         justify-content: space-between;
@@ -96,6 +96,11 @@
             color: var(--accent-color);
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         }
+
+    @media screen and(max-width: 420px) {
+            font-size: calc(34px + 6 * (100vw / 1200));
+            
+    }
 }
 .menu-site_link.current {
 
@@ -128,6 +133,11 @@
     letter-spacing: 0.02em;
     color: var(--accent-color);
     margin-bottom: 32px;
+
+    @media screen and(max-width: 420px) {
+        font-size: calc(22px + 12 * (100vw / 1200));
+        
+    }
 }
 .menu-contacts_tel {
     text-decoration: none;
@@ -148,6 +158,9 @@
     padding: 0;
     margin: 0 43px 0 0;
     
+    @media screen and (max-width: 420px) {
+        flex-wrap: wrap;
+    }
 }
 .menu-social_link {
     
@@ -159,12 +172,19 @@
     line-height: 1.20;
     letter-spacing: 0.02em;
     color: var(--accent-color);
+
+    // @media screen and(max-width: 450px) {
+    //     font-size: calc(12px + 6 * (100vw / 1200));
+        
+    // }
     
 }
 .menu-social_item {
     &:not(:last-child){
         margin-right: 10px;
     }
+    
+    
 }
 
 .line {
