@@ -73,16 +73,16 @@
 .menu-content {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
     justify-content: space-between;
 }
 
 .menu-site {
     display: block;
     padding: 0;
-    
-    margin-bottom: 302px;
+    // margin-bottom: 302px;
 }
+
 .menu-site_list {
     &:not(:last-child) {
             margin-bottom: 32px;
@@ -97,7 +97,7 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
-   
+
     &:hover,
     &:focus {
             color: var(--accent-color);
@@ -165,7 +165,7 @@
     padding: 0;
     margin: 0 43px 0 0;
     
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 413px) {
         flex-wrap: wrap;
     }
 }
