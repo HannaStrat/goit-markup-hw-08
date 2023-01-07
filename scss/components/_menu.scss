@@ -48,7 +48,7 @@
     transform: translateX(100%);
     transition: transform 250ms ease-in-out;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
     .menu-container {
         display: none;
     }
@@ -70,7 +70,14 @@
         fill: var(--accent-color);
     }
 }
-.menu-site{
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.menu-site {
     display: block;
     padding: 0;
     
@@ -183,7 +190,6 @@
     &:not(:last-child){
         margin-right: 10px;
     }
-    
     
 }
 
