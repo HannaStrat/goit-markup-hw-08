@@ -141,9 +141,8 @@
     color: var(--accent-color);
     margin-bottom: 32px;
 
-    @media screen and(max-width: 420px) {
+    @media screen and (max-width: 420px) {
         font-size: calc(22px + 12 * (100vw / 1200));
-        
     }
 }
 .menu-contacts_tel {
@@ -165,9 +164,6 @@
     padding: 0;
     margin: 0 43px 0 0;
     
-    @media screen and (max-width: 413px) {
-        flex-wrap: wrap;
-    }
 }
 .menu-social_link {
     
@@ -180,10 +176,9 @@
     letter-spacing: 0.02em;
     color: var(--accent-color);
 
-    // @media screen and(max-width: 450px) {
-    //     font-size: calc(12px + 6 * (100vw / 1200));
-        
-    // }
+    @media screen and(max-width: 450px) {
+        font-size: calc(12px + 6 * (100vw / 1200));
+    }
     
 }
 .menu-social_item {

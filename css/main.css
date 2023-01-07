@@ -1313,6 +1313,8 @@ header .link-logo {
 .projects__list {
   display: block;
   text-decoration: none;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0;
 }
 @media screen and (min-width: 768px) {
@@ -1362,7 +1364,6 @@ header .link-logo {
 }
 @media screen and (min-width: 480px) {
   .project {
-    max-width: 354px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -1799,12 +1800,6 @@ header .link-logo {
   padding: 0;
   margin: 0 43px 0 0;
 }
-@media screen and (max-width: 413px) {
-  .menu-social {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
 
 .menu-social_link {
   text-decoration: none;
@@ -1815,6 +1810,11 @@ header .link-logo {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--accent-color);
+}
+@media screen and (max-width: 450px) {
+  .menu-social_link {
+    font-size: calc(12px + 0.5vw);
+  }
 }
 
 .menu-social_item:not(:last-child) {
